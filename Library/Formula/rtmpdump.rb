@@ -9,6 +9,8 @@ class Rtmpdump < Formula
   
   fails_with_llvm if MacOS.lion?
 
+  fails_with_llvm if MacOS.lion?
+
   # Use dylib instead of so
   def patches; DATA; end
 
